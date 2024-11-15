@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <h1>Email Sender Dashboard</h1>
+    <div id="file-upload">
+        <label for="file-input">Upload CSV File</label>
+        <input type="file" id="file-input" accept=".csv" />
+    </div>
+    <div id="email-setup">
+        <label for="email-subject">Email Subject</label>
+        <input type="text" id="email-subject" placeholder="Enter subject" />
+        <textarea id="email-body" placeholder="Enter email body"></textarea>
+        <button onclick="sendEmail()">Send Emails</button>
+    </div>
+    <div id="analytics">
+        <h2>Real-Time Analytics</h2>
+        <div id="analytics-status">
+            <p>Total Sent: <span id="total-sent">0</span></p>
+            <p>Emails Failed: <span id="failed-emails">0</span></p>
+            <p>Emails Scheduled: <span id="scheduled-emails">0</span></p>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
